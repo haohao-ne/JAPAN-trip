@@ -1,178 +1,206 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hokkaido Winter Itinerary 2026</title>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Source+Sans+3:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
-    <style>
-        :root {
-            --bg: #FAFAF8; --fg: #1A1A1A; --muted: #F5F3F0; --muted-fg: #6B6B6B;
-            --accent: #B8860B; --accent-light: #D4A84B; --border: #E8E4DF; --card: #FFFFFF;
-            --serif: "Playfair Display", Georgia, serif;
-            --sans: "Source Sans 3", system-ui, sans-serif;
-            --mono: "IBM Plex Mono", monospace;
-        }
-
-        body { 
-            margin: 0; background-color: var(--bg); color: var(--fg); 
-            font-family: var(--sans); line-height: 1.75; letter-spacing: 0.01em; 
-        }
-
-        .container { max-width: 640px; margin: 0 auto; min-height: 100vh; position: relative; overflow: hidden; }
-        .ambient-glow { position: absolute; top: -200px; right: -200px; width: 600px; height: 600px; border-radius: 50%; background: var(--accent); opacity: 0.02; pointer-events: none; }
-
-        /* Hero */
-        header { text-align: center; padding: 56px 24px 40px; border-bottom: 1px solid var(--border); }
-        .label-mono { font-family: var(--mono); font-size: 11px; font-weight: 500; letter-spacing: 0.15em; text-transform: uppercase; color: var(--accent); margin-bottom: 20px; }
-        h1 { font-family: var(--serif); font-size: clamp(2rem, 6vw, 3.2rem); font-weight: 400; line-height: 1.1; letter-spacing: -0.02em; margin: 0 0 12px; }
-        .italic-sub { font-family: var(--serif); font-size: clamp(1.1rem, 3vw, 1.35rem); font-style: italic; color: var(--muted-fg); margin-bottom: 20px; }
-        
-        /* Sections */
-        .section-label { display: flex; align-items: center; gap: 16px; margin: 40px 20px 24px; }
-        .section-label .line { height: 1px; flex: 1; background: var(--border); }
-
-        /* Card */
-        .card { background: var(--card); border-radius: 8px; border: 1px solid var(--border); margin: 16px 20px; overflow: hidden; transition: 0.2s; }
-        
-        /* Stats Grid */
-        .stats-grid { display: grid; grid-template-columns: 1fr 1px 1fr 1px 1fr; align-items: center; padding: 24px 20px; }
-        .stat-item { text-align: center; }
-        .stat-val { font-family: var(--serif); font-size: 24px; color: var(--fg); }
-        .divider { width: 1px; height: 40px; background: var(--border); }
-
-        /* Buttons Group */
-        .btn-group { display: flex; flex: 1; border-radius: 6px; overflow: hidden; border: 1px solid var(--border); }
-        .btn-group button { 
-            flex: 1; padding: 10px 0; border: none; background: transparent; 
-            font-family: var(--serif); font-size: 18px; cursor: pointer; border-right: 1px solid var(--border); 
-        }
-        .btn-group button:last-child { border-right: none; }
-        .btn-group button.active { background: var(--accent); color: white; }
-
-        /* Day Item */
-        .day-header { 
-            width: 100%; display: flex; align-items: center; justify-content: space-between; 
-            padding: 16px 20px; border: none; background: transparent; cursor: pointer; text-align: left;
-        }
-        .day-num { font-family: var(--serif); font-size: 28px; color: var(--accent); margin-right: 12px; }
-        .day-content { display: none; border-top: 1px solid var(--border); padding-bottom: 12px; }
-        .day-content.open { display: block; }
-        
-        .spot-row { display: grid; grid-template-columns: 52px 1fr auto; gap: 8px; padding: 6px 20px; font-size: 14px; }
-        .option-box { margin: 14px 20px 8px; border-top: 1px solid var(--border); paddingTop: 14px; }
-        
-        /* Badge */
-        .badge { font-family: var(--mono); font-size: 9px; background: var(--accent); color: white; padding: 1px 6px; border-radius: 3px; text-transform: uppercase; margin-left: 8px; }
-
-        .footer-note { font-family: var(--mono); font-size: 10px; color: var(--muted-fg); padding: 20px; border-top: 1px solid var(--border); }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Hokkaido 8N7Đ · Mùa đông trên tuyết</title>
+<meta name="description" content="Lịch trình Hokkaido tự túc 8N7Đ, tháng 12/2026. Trượt tuyết Niseko · Onsen · Hải sản.">
+<meta property="og:title" content="Hokkaido 8N7Đ — Mùa đông trên tuyết ❄️">
+<meta property="og:description" content="SGN → CTS · 6–13/12/2026 · Lịch trình tương tác, chọn option & tự tính chi phí">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Source+Sans+3:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#FAFAF8;--fg:#1A1A1A;--muted:#F5F3F0;--mfg:#6B6B6B;--accent:#B8860B;--border:#E8E4DF;--card:#FFF;
+--serif:'Playfair Display',Georgia,serif;--sans:'Source Sans 3',system-ui,sans-serif;--mono:'IBM Plex Mono',monospace}
+@media(prefers-color-scheme:dark){:root{--bg:#1a1a1e;--fg:#e8e8ed;--muted:#27272a;--mfg:#a0a0a8;--border:#3f3f46;--card:#222225}}
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:var(--sans);max-width:640px;margin:0 auto;background:var(--bg);color:var(--fg);line-height:1.75;letter-spacing:.01em;position:relative;overflow-x:hidden}
+.glow{position:absolute;top:-200px;right:-200px;width:600px;height:600px;border-radius:50%;background:var(--accent);opacity:.02;pointer-events:none}
+.hero{text-align:center;padding:56px 24px 40px;border-bottom:1px solid var(--border)}
+.tag{font-family:var(--mono);font-size:11px;font-weight:500;letter-spacing:.15em;text-transform:uppercase;color:var(--accent)}
+.hero h1{font-family:var(--serif);font-size:clamp(2rem,6vw,3.2rem);font-weight:400;line-height:1.1;letter-spacing:-.02em;margin:20px 0 12px}
+.hero .sub{font-family:var(--serif);font-size:clamp(1.1rem,3vw,1.35rem);font-style:italic;color:var(--mfg);line-height:1.4;margin-bottom:20px}
+.hero .rule{width:40px;height:1px;background:var(--accent);margin:0 auto 20px}
+.hero .meta{font-size:13px;color:var(--mfg);letter-spacing:.02em}
+.leave{margin:24px 20px;padding:16px 20px;background:var(--muted);border-radius:8px;border-left:3px solid var(--accent)}
+.leave .lt{font-family:var(--mono);font-size:11px;font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin-bottom:6px}
+.leave p{font-size:14px;line-height:1.7}.leave span{color:var(--mfg)}
+.grp{margin:16px 20px;display:flex;align-items:center;gap:16}
+.grp .gl{font-family:var(--mono);font-size:11px;font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:var(--mfg);flex-shrink:0}
+.grp .btns{display:flex;flex:1}
+.grp .btns button{flex:1;padding:10px 0;border:1px solid var(--border);background:transparent;color:var(--fg);font-family:var(--serif);font-size:18px;cursor:pointer;transition:all .2s}
+.grp .btns button:first-child{border-radius:6px 0 0 6px}
+.grp .btns button:last-child{border-radius:0 6px 6px 0}
+.grp .btns button:not(:first-child){border-left:none}
+.grp .btns button.on{background:var(--accent);color:#fff}
+.grp .rm{font-size:12px;color:var(--mfg);flex-shrink:0;min-width:50px;text-align:right}
+.solo-box{margin:12px 20px;background:var(--card);border-radius:8px;border:1px solid var(--border);overflow:hidden}
+.solo-box .sh{padding:10px 16px;border-bottom:1px solid var(--border);font-family:var(--mono);font-size:10px;font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:var(--accent)}
+.solo-row{display:grid;grid-template-columns:20px 1fr auto;gap:12px;padding:12px 16px;cursor:pointer;border-bottom:1px solid var(--border);transition:background .15s}
+.solo-row.on{background:color-mix(in srgb,var(--accent) 5%,transparent)}
+.solo-detail{padding:8px 16px 12px 48px;background:var(--muted);border-bottom:1px solid var(--border);font-size:12px;color:var(--mfg)}
+.solo-detail div{display:flex;justify-content:space-between;padding:3px 0}
+.solo-detail .c{font-family:var(--mono);font-size:11px}
+.radio{width:16px;height:16px;border-radius:50%;border:1.5px solid var(--border);display:flex;align-items:center;justify-content:center;margin-top:2px;flex-shrink:0}
+.radio.on{border-color:var(--accent)}.radio.on::after{content:'';width:8px;height:8px;border-radius:50%;background:var(--accent)}
+.stats{display:grid;grid-template-columns:1fr 1px 1fr 1px 1fr;align-items:center;padding:24px 20px;margin:16px 20px 0;background:var(--card);border-radius:8px;border:1px solid var(--border)}
+.stats .div{width:1px;height:40px;background:var(--border);margin:0 auto}
+.stats .st{text-align:center}
+.stats .sv{font-family:var(--serif);font-size:24px;font-weight:400;line-height:1.2}
+.stats .sl{font-family:var(--mono);font-size:10px;font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:var(--mfg);margin-top:4px}
+.stats .ss{font-size:11px;color:var(--mfg);margin-top:2px}
+.sec-label{display:flex;align-items:center;gap:16px;margin:40px 20px 24px}
+.sec-label span:first-child,.sec-label span:last-child{height:1px;flex:1;background:var(--border)}
+.sec-label .txt{font-family:var(--mono);font-size:11px;font-weight:500;letter-spacing:.15em;text-transform:uppercase;color:var(--accent)}
+.day{margin:0 20px 12px;background:var(--card);border-radius:8px;border:1px solid var(--border);overflow:hidden;transition:border-color .2s}
+.day.open{border-color:color-mix(in srgb,var(--accent) 40%,var(--border))}
+.day-hdr{width:100%;display:flex;align-items:center;justify-content:space-between;padding:16px 20px;border:none;background:transparent;cursor:pointer;font-family:var(--sans);color:var(--fg);text-align:left}
+.day-hdr .num{font-family:var(--serif);font-size:28px;font-weight:400;line-height:1;color:var(--accent);flex-shrink:0;margin-right:12px}
+.day-hdr .ti{font-family:var(--serif);font-size:17px;font-weight:600;line-height:1.3}
+.day-hdr .da{font-size:12px;color:var(--mfg);margin-top:2px}
+.day-hdr .co{font-family:var(--serif);font-size:15px;color:var(--mfg);margin-right:10px}
+.day-hdr .arr{font-size:10px;color:var(--mfg);transition:transform .2s}
+.day.open .arr{transform:rotate(180deg)}
+.day-body{border-top:1px solid var(--border);padding:16px 0 12px}
+.day-sub{padding:0 20px 12px;font-family:var(--serif);font-style:italic;font-size:14px;color:var(--mfg)}
+.spot{display:grid;grid-template-columns:52px 1fr auto;gap:8px;padding:6px 20px;align-items:start}
+.spot .tm{font-family:var(--mono);font-size:12px;color:var(--mfg);padding-top:2px}
+.spot .nm{font-size:14px;font-weight:500;line-height:1.4}
+.spot .dt{font-size:13px;color:var(--mfg);line-height:1.5}
+.spot .pr{text-align:right;min-width:65px;flex-shrink:0;font-family:var(--serif);font-size:14px;color:var(--accent)}
+.spot .nt{font-size:11px;color:var(--mfg)}
+.opt-group{margin:14px 20px 8px;border-top:1px solid var(--border);padding-top:14px}
+.opt-group .ol{font-family:var(--mono);font-size:10px;font-weight:500;letter-spacing:.13em;text-transform:uppercase;color:var(--accent);margin-bottom:10px}
+.opt-row{display:grid;grid-template-columns:20px 1fr auto;gap:10px;padding:10px 12px;cursor:pointer;border-radius:6px;margin-bottom:4px;border:1px solid transparent;transition:all .15s}
+.opt-row.on{background:color-mix(in srgb,var(--accent) 4%,transparent);border-color:color-mix(in srgb,var(--accent) 20%,transparent)}
+.opt-row .on-nm{font-size:13px;font-weight:500;line-height:1.4;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.opt-row .on-dt{font-size:12px;color:var(--mfg);line-height:1.5}
+.rec-tag{font-family:var(--mono);font-size:9px;letter-spacing:.1em;text-transform:uppercase;background:var(--accent);color:#fff;padding:1px 6px;border-radius:3px}
+.opt-row .on-pr{text-align:right;min-width:60px;flex-shrink:0}
+.opt-row .on-pr .am{font-family:var(--serif);font-size:13px;color:var(--mfg)}
+.opt-row.on .on-pr .am{color:var(--accent)}
+.day-total{display:flex;justify-content:flex-end;padding:10px 20px 4px;border-top:1px solid var(--border);margin-top:8px}
+.day-total span{font-family:var(--serif);font-size:14px;color:var(--accent)}
+.day-total .vnd{font-family:var(--sans);font-size:12px;color:var(--mfg)}
+.budget{margin:0 20px;background:var(--card);border-radius:8px;border:1px solid var(--border);overflow:hidden}
+.budget .bh{padding:14px 20px;border-bottom:1px solid var(--border);display:flex;justify-content:space-between;align-items:center}
+.budget .bh .bt{font-family:var(--serif);font-size:16px;font-weight:600}
+.budget .bh .bm{font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--mfg)}
+.b-row{display:grid;grid-template-columns:1fr auto;gap:12px;padding:12px 20px;border-bottom:1px solid var(--border);align-items:center}
+.b-row .bl{font-size:14px;font-weight:500}.b-row .bn{font-size:12px;color:var(--mfg)}
+.b-row .bv{font-family:var(--serif);font-size:15px;text-align:right}
+.b-row .bv.ac{color:var(--accent);font-weight:600}
+.b-total{display:grid;grid-template-columns:1fr auto;gap:12px;padding:16px 20px;background:var(--muted);align-items:center}
+.b-total .tl{font-family:var(--serif);font-size:18px;font-weight:600}
+.b-total .tv{font-family:var(--serif);font-size:22px;font-weight:600;color:var(--accent)}
+.food{margin:0 20px;columns:2;column-gap:24px;font-size:13px;line-height:2}
+.food div{break-inside:avoid}
+.food .dash{color:var(--accent);margin-right:8px}
+.notes{margin:0 20px 40px;font-size:13px;color:var(--mfg);line-height:1.8}
+.notes p{margin:0 0 12px}.notes strong{color:var(--fg)}
+.footer{border-top:1px solid var(--border);padding:20px 20px 32px;margin:0 20px;font-family:var(--mono);font-size:10px;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:var(--mfg);line-height:1.8}
+@media(max-width:480px){.food{columns:1}.stats{grid-template-columns:1fr;gap:16px;padding:20px}.stats .div{width:80%;height:1px;margin:0 auto}}
+</style>
 </head>
 <body>
-
-<div class="container">
-    <div class="ambient-glow"></div>
-
-    <header>
-        <div class="label-mono">Lịch trình tự túc · <span id="display-people">2</span> người · Mùa đông 2026</div>
-        <h1>Hokkaido</h1>
-        <div class="italic-sub">Tám ngày giữa tuyết trắng, onsen nóng<br>và hải sản tươi nhất xứ Phù Tang</div>
-        <div style="width:40px; height:1px; background:var(--accent); margin: 0 auto 20px;"></div>
-        <div style="font-size:13px; color:var(--muted-fg)">SGN → CTS · 6–13 Tháng 12 · Trượt tuyết Niseko · Onsen · Hải sản</div>
-    </header>
-
-    <div style="margin:24px 20px; display:flex; align-items:center; gap:16px;">
-        <span class="label-mono" style="margin:0">Số người</span>
-        <div class="btn-group" id="people-picker">
-            <button onclick="updateGroup(1)">1</button>
-            <button onclick="updateGroup(2)" class="active">2</button>
-            <button onclick="updateGroup(3)">3</button>
-            <button onclick="updateGroup(4)">4</button>
-        </div>
-    </div>
-
-    <div class="card">
-        <div class="stats-grid">
-            <div class="stat-item">
-                <div class="stat-val" id="total-per-person">--</div>
-                <div class="label-mono" style="font-size:10px; margin:4px 0 0">Tổng / Người</div>
-            </div>
-            <div class="divider"></div>
-            <div class="stat-item">
-                <div class="stat-val" id="total-activities">--</div>
-                <div class="label-mono" style="font-size:10px; margin:4px 0 0">Ăn uống & Vé</div>
-            </div>
-            <div class="divider"></div>
-            <div class="stat-item">
-                <div class="stat-val">165₫</div>
-                <div class="label-mono" style="font-size:10px; margin:4px 0 0">Tỉ giá</div>
-            </div>
-        </div>
-    </div>
-
-    <div class="section-label">
-        <div class="line"></div>
-        <span class="label-mono">Lịch trình chi tiết</span>
-        <div class="line"></div>
-    </div>
-
-    <div id="itinerary-container" style="padding: 0 20px;">
-        <div class="card" style="margin: 0 0 12px 0;">
-            <button class="day-header" onclick="toggleDay(1)">
-                <div style="display:flex; align-items:baseline;">
-                    <span class="day-num">01</span>
-                    <div>
-                        <div style="font-weight:600; font-family:var(--serif)">Đến Sapporo</div>
-                        <div style="font-size:12px; color:var(--muted-fg)">6 Tháng 12 · Chủ Nhật</div>
-                    </div>
-                </div>
-                <span style="font-size:10px; color:var(--muted-fg)">▼</span>
-            </button>
-            <div id="day-1" class="day-content">
-                <div style="padding:0 20px 12px; font-style:italic; font-size:14px; color:var(--muted-fg)">Tuyết đầu mùa & đèn Giáng sinh</div>
-                <div class="spot-row">
-                    <span style="font-family:var(--mono); color:var(--muted-fg)">15:00</span>
-                    <span>Xe đón về Sapporo <br><small style="color:var(--muted-fg)">Xe 10 chỗ, ~60 phút</small></span>
-                    <span style="color:var(--accent)">¥7,000</span>
-                </div>
-                </div>
-        </div>
-        </div>
-
-    <div class="footer-note">
-        1 JPY ≈ 165 VNĐ · Tham khảo 04/2026 · Dao động ±15–20%<br>
-        Đây là bản xem trước cấu trúc. Toàn bộ nội dung dữ liệu (8 ngày) được giữ nguyên theo file thiết kế gốc.
-    </div>
-</div>
-
+<div class="glow"></div>
+<div id="app"></div>
 <script>
-    // Logic đơn giản để đóng mở ngày
-    function toggleDay(dayId) {
-        const content = document.getElementById('day-' + dayId);
-        content.classList.toggle('open');
-    }
+const DAYS=[{day:1,date:"6 Tháng 12 · Chủ Nhật",title:"Đến Sapporo",subtitle:"Tuyết đầu mùa & đèn Giáng sinh",spots:[{time:"06:00",name:"Bay SGN → CTS",detail:"VietJet / AirAsia / Thai Airways — transit",cost:0,note:"Vé bay tính riêng"},{time:"14:00",name:"Hạ cánh New Chitose",detail:"Nhập cảnh, lấy hành lý",cost:0,note:""},{time:"15:00",name:"Xe đón về Sapporo",detail:"Xe 10 chỗ, ~60 phút về trung tâm",cost:7000,note:"7,000¥ ÷ 5"},{time:"16:00",name:"Check-in khách sạn",detail:"Gần Sapporo Station, bao buffet sáng",cost:0,note:"KS tính riêng"},{time:"17:00",name:"Sapporo White Illumination",detail:"Đèn Giáng sinh dọc Odori Park — chỉ có tháng 11–12",cost:0,note:"Miễn phí"},{time:"17:30",name:"Sapporo TV Tower",detail:"Ngắm illumination từ trên cao",cost:1000,note:"1,000¥"}],options:[{id:"dinner_d1",label:"Bữa tối đầu tiên",def:0,choices:[{name:"Ramen Yokocho — Miso Ramen gốc",detail:"Hẻm ramen huyền thoại 17 quán",cost:1200,note:"~1,200¥"},{name:"Daruma — Jingisukan huyền thoại",detail:"BBQ cừu nướng than hoa từ 1954",cost:2500,note:"~2,500¥"},{name:"Ebisoba Ichigen — Mì tôm hùm",detail:"Nước dùng tôm hùm nguyên con, viral khắp Nhật",cost:1500,note:"~1,500¥",rec:1}]},{id:"after_d1",label:"After dinner",def:0,choices:[{name:"Dạo phố đêm Susukino",detail:"Đèn neon rực rỡ trong tuyết",cost:0,note:"Miễn phí"},{name:"Parfait Shiméé — khuya kiểu Sapporo",detail:"Văn hóa ăn parfait sau 10pm",cost:1500,note:"~1,500¥",rec:1},{name:"Bar hopping Tanukikoji",detail:"3 quán bar local, sake Hokkaido",cost:3000,note:"~3,000¥"}]}]},{day:2,date:"7 Tháng 12 · Thứ Hai",title:"Otaru",subtitle:"Kênh đào tuyết trắng & hộp nhạc",spots:[{time:"09:00",name:"Xuất phát đi Otaru",detail:"Xe 7 chỗ, 45 phút",cost:0,note:"Gồm xe ngày"},{time:"10:00",name:"Otaru Canal",detail:"Kênh đào + đèn gas cổ điển phủ tuyết",cost:0,note:"Miễn phí"},{time:"11:00",name:"Sakaimachi",detail:"Phố thủy tinh, chuông gió",cost:0,note:"Tự túc"},{time:"13:00",name:"Music Box Museum",detail:"Bảo tàng hộp nhạc lớn nhất Nhật",cost:0,note:"Miễn phí"},{time:"14:00",name:"LeTAO Cheesecake",detail:"Double Fromage huyền thoại",cost:800,note:"~800¥"}],options:[{id:"lunch_d2",label:"Ăn trưa Otaru",def:0,choices:[{name:"Sushi-ya Dori — phố sushi",detail:"20+ quán sushi tươi, kaisendon",cost:2000,note:"~2,000¥"},{name:"Masazushi — Omakase top Otaru",detail:"Quán sushi 60 năm, 12 miếng chef chọn",cost:5000,note:"~5,000¥",rec:1},{name:"Naruto — Gà rán Wakadori",detail:"Nửa con gà chiên 800¥, local từ 1952",cost:800,note:"~800¥"}]},{id:"extra_d2",label:"Trước khi về",def:0,choices:[{name:"Về thẳng Sapporo",detail:"Nghỉ ngơi sớm",cost:0,note:""},{name:"Nikka Whisky Yoichi",detail:"Nhà máy whisky nổi tiếng, tour miễn phí",cost:0,note:"Miễn phí",rec:1},{name:"Kiroro Snow Resort",detail:"30 phút từ Otaru, chơi tuyết",cost:5000,note:"~5,000¥"}]}]},{day:3,date:"8 Tháng 12 · Thứ Ba",title:"Furano & Biei",subtitle:"Hồ xanh huyền bí & làng cổ tích",spots:[{time:"07:00",name:"Xuất phát từ Sapporo",detail:"Đi Furano–Biei, ~2.5 giờ",cost:0,note:"Gồm xe ngày"},{time:"09:30",name:"Blue Pond",detail:"Hồ cobalt đóng băng + đèn LED mùa đông",cost:500,note:"500¥"},{time:"10:20",name:"Shirahige Waterfall",detail:"Thác nước giữa vách đá phủ tuyết",cost:0,note:"Miễn phí"},{time:"12:50",name:"Christmas Tree no Ki",detail:"Cây thông cô đơn giữa đồng tuyết",cost:0,note:"Miễn phí"},{time:"14:00",name:"Ningle Terrace",detail:"Làng gỗ cổ tích giữa rừng thông tuyết",cost:0,note:"Miễn phí"}],options:[{id:"lunch_d3",label:"Ăn trưa Furano",def:0,choices:[{name:"Furano Curry — rau nông trại",detail:"Rau Furano organic, cà ri đặc biệt",cost:1500,note:"~1,500¥"},{name:"Cheese Kōbō + Pizza lò gạch",detail:"Pizza phô mai Furano + kem sữa tươi",cost:1800,note:"~1,800¥",rec:1},{name:"Kumagera — Lẩu nabe Furano",detail:"Thịt heo + rau mùa đông",cost:2200,note:"~2,200¥"}]},{id:"dinner_d3",label:"Ăn tối về Sapporo",def:0,choices:[{name:"GARAKU — Soup Curry #1",detail:"Gà nguyên đùi + rau Hokkaido",cost:1500,note:"~1,500¥"},{name:"Suage+ — Rau nướng than",detail:"Rau nướng trực tiếp, 20 loại gia vị",cost:1600,note:"~1,600¥",rec:1},{name:"Sumire — Miso ramen OG",detail:"Miso ramen gốc Sapporo từ 1964",cost:1000,note:"~1,000¥"}]}]},{day:4,date:"9 Tháng 12 · Thứ Tư",title:"Niseko",subtitle:"Trượt tuyết Japow huyền thoại",spots:[{time:"07:00",name:"Đi Niseko",detail:"Hirafu Village, 2–2.5 giờ",cost:0,note:"Gồm xe ngày"},{time:"09:30",name:"Check-in Hirafu Village",detail:"Thuê đồ trượt, ngắm làng tuyết",cost:0,note:""},{time:"10:00",name:"Trượt tuyết Grand Hirafu",detail:"Early season + thuê full bộ đồ",cost:9500,note:"~9,500¥"},{time:"13:00",name:"Tiếp tục trượt / Nghỉ café",detail:"Ngắm núi Yotei phủ tuyết",cost:0,note:""},{time:"15:30",name:"Café Niseko",detail:"Hot chocolate + bánh ngọt Hokkaido",cost:1000,note:"~1,000¥"},{time:"16:30",name:"Về Sapporo",detail:"~2–2.5 giờ",cost:0,note:""}],options:[{id:"lunch_d4",label:"Trưa tại Niseko",def:0,choices:[{name:"Lodge canteen — Udon nóng",detail:"Ăn nhanh tại lodge, view tuyết rơi",cost:1500,note:"~1,500¥"},{name:"Niseko Pizza — Lò gỗ",detail:"Margherita pho mát Hokkaido",cost:2000,note:"~2,000¥",rec:1}]},{id:"dinner_d4",label:"Ăn tối — Cua hoàng đế",def:1,choices:[{name:"Kani Doraku — Set cua nướng",detail:"Set cua nướng + lẩu + sashimi",cost:6000,note:"~6,000¥"},{name:"Kani Honke — Full course 7 món",detail:"Sashimi, nướng, lẩu, tempura, cơm cua — #1 Sapporo",cost:8000,note:"~8,000¥",rec:1},{name:"Hyōsetsu no Mon — All-you-can-eat",detail:"Buffet cua không giới hạn 90 phút",cost:10000,note:"~10,000¥"}]}]},{day:5,date:"10 Tháng 12 · Thứ Năm",title:"Noboribetsu",subtitle:"Thung lũng Địa ngục & Onsen",spots:[{time:"08:00",name:"Xuất phát",detail:"Đi Noboribetsu, 1.5 giờ",cost:0,note:"Gồm xe ngày"},{time:"09:30",name:"Hell Valley",detail:"Núi lửa bốc khói giữa tuyết trắng",cost:0,note:"Miễn phí"},{time:"11:00",name:"Oyunuma + Footbath",detail:"Ngâm chân giữa trời tuyết",cost:0,note:"Miễn phí"}],options:[{id:"activity_d5",label:"Hoạt động chiều",def:0,choices:[{name:"Date Historic Village",detail:"Làng samurai Edo, cosplay ninja",cost:2900,note:"2,900¥"},{name:"Bear Park — Gấu nâu Hokkaido",detail:"Cáp treo lên núi ngắm gấu + view tuyết",cost:2650,note:"2,650¥",rec:1}]},{id:"lunch_d5",label:"Ăn trưa",def:0,choices:[{name:"Viking Buffet hải sản",detail:"Buffet đa dạng món Nhật",cost:2500,note:"~2,500¥"},{name:"Kaiseki tại Ryokan",detail:"8 món nhỏ tinh tế truyền thống",cost:4000,note:"~4,000¥",rec:1}]},{id:"onsen_d5",label:"Onsen",def:0,choices:[{name:"Daiichi Takimotokan — 35 bể",detail:"Onsen lớn nhất, lộ thiên giữa tuyết",cost:2250,note:"2,250¥"},{name:"Mahoroba — View Jigoku",detail:"Lộ thiên view Hell Valley, mới renovate",cost:2000,note:"2,000¥"}]}]},{day:6,date:"11 Tháng 12 · Thứ Sáu",title:"Sapporo City",subtitle:"Bia, Chocolate & Hải sản",spots:[{time:"09:00",name:"Hokkaido Shrine",detail:"Đền thờ linh thiêng phủ tuyết",cost:0,note:"Miễn phí"},{time:"10:30",name:"Bảo tàng Bia Sapporo",detail:"Tour nhà máy + nếm bia tươi",cost:500,note:"500¥"},{time:"12:00",name:"Shiroi Koibito Park",detail:"Nhà máy chocolate trang trí Giáng sinh",cost:800,note:"800¥"}],options:[{id:"lunch_d6",label:"Ăn trưa",def:0,choices:[{name:"Café + Bánh ngọt Hokkaido",detail:"Latte art + bánh sữa tươi",cost:1500,note:"~1,500¥"},{name:"Beer Garden — Jingisukan + bia",detail:"BBQ cừu tại nhà máy gạch đỏ, bia không giới hạn",cost:4000,note:"~4,000¥",rec:1}]},{id:"afternoon_d6",label:"Buổi chiều",def:0,choices:[{name:"Shopping Daimaru / Tanukikoji",detail:"Mỹ phẩm, snack Nhật, lưu niệm",cost:0,note:"Tự túc"},{name:"Nijo Market — Hải sản tươi",detail:"Chợ cá 100 năm: uni, cua nướng, hàu sống",cost:2000,note:"~2,000¥",rec:1}]},{id:"dinner_d6",label:"Ăn tối",def:0,choices:[{name:"Sushi Zanmai",detail:"Sushi băng chuyền, ikura don",cost:3000,note:"~3,000¥"},{name:"Nemuro Hanamaru — Local #1",detail:"Cá cực tươi từ Nemuro, local xếp hàng",cost:3500,note:"~3,500¥",rec:1},{name:"Ishikari Nabe — Lẩu cá hồi",detail:"Lẩu truyền thống: cá hồi + miso",cost:2500,note:"~2,500¥"}]},{id:"night_d6",label:"Buổi tối",def:0,choices:[{name:"Nghỉ ngơi tại KS",detail:"Chuẩn bị ngày mai",cost:0,note:""},{name:"Night Ski Mt. Moiwa",detail:"Trượt tuyết đêm ngắm Sapporo lấp lánh",cost:3200,note:"~3,200¥",rec:1},{name:"Moiwa Ropeway — Night view",detail:"Cáp treo ngắm đêm, top 3 Nhật",cost:2100,note:"2,100¥"}]}]},{day:7,date:"12 Tháng 12 · Thứ Bảy",title:"Jozankei",subtitle:"Onsen giữa núi tuyết & mua quà",spots:[{time:"09:00",name:"Đi Jozankei Onsen",detail:"50 phút, thị trấn onsen giữa núi",cost:0,note:"Gồm xe ngày"},{time:"13:30",name:"Dạo Jozankei",detail:"Cầu Futami, Kappa Pool, đền Jozankei",cost:0,note:"Miễn phí"},{time:"15:00",name:"Về Sapporo — mua quà",detail:"Don Quijote, Tanukikoji",cost:0,note:""}],options:[{id:"onsen_d7",label:"Onsen Jozankei",def:0,choices:[{name:"Hoheikyo — Rotenburo hoang dã",detail:"Lộ thiên giữa rừng tuyết",cost:1500,note:"1,500¥"},{name:"Tsuruga Resort Spa — Luxury",detail:"View sông + tuyết, infinity pool",cost:3000,note:"3,000¥",rec:1}]},{id:"lunch_d7",label:"Ăn trưa",def:0,choices:[{name:"Kaiseki nhẹ tại ryokan",detail:"Set trưa Nhật truyền thống",cost:2500,note:"~2,500¥"},{name:"Onsen + Lunch package",detail:"Gói onsen + buffet tại resort",cost:4500,note:"~4,500¥",rec:1}]},{id:"dinner_d7",label:"Bữa tối cuối cùng",def:0,choices:[{name:"Daruma — Genghis Khan BBQ",detail:"BBQ cừu Hokkaido, bữa cuối trọn vẹn",cost:3500,note:"~3,500¥"},{name:"Zangi Hotei + Bia Sapporo",detail:"Gà chiên Hokkaido + mabo-men",cost:2000,note:"~2,000¥",rec:1},{name:"Parfait đêm cuối",detail:"Ăn parfait khuya nhìn tuyết rơi",cost:1800,note:"~1,800¥"}]}]},{day:8,date:"13 Tháng 12 · Chủ Nhật",title:"Về nhà",subtitle:"Hẹn gặp lại, Hokkaido",spots:[{time:"07:00",name:"Ăn sáng + Check-out",detail:"Gói đồ, trả phòng",cost:0,note:"Gồm KS"},{time:"08:00",name:"Ra sân bay New Chitose",detail:"Xe 10 chỗ, ~60 phút",cost:7800,note:"7,800¥ ÷ 5"},{time:"12:00",name:"Bay CTS → SGN",detail:"Hẹn gặp lại Hokkaido",cost:0,note:"Vé tính riêng"}],options:[{id:"airport_d8",label:"Shopping sân bay",def:0,choices:[{name:"Quà cơ bản — Royce', Shiroi Koibito",detail:"Chocolate + cookie cho gia đình",cost:3000,note:"~3,000¥"},{name:"Full set Hokkaido premium",detail:"Royce' + LeTAO + Marusei + Jaga Pokkuru",cost:5000,note:"~5,000¥",rec:1}]}]}];
+const ROOMS={1:1,2:1,3:2,4:2};
+const SOLO={jr:{jpy:48300,label:"JR Pass + Bus + Tour",note:"JR Pass 7 ngày ¥23,000 · Niseko bus KH ¥12,000 · Furano-Biei tour ¥10,000 · Bus lẻ ¥3,300",detail:[["JR Hokkaido Pass 7 ngày",23000],["Niseko Resort Liner KH",12000],["Furano-Biei 1-day tour",10000],["Jozankei Jotetsu Bus KH",1600],["Noboribetsu Donan Bus + taxi",1700]]},car:{jpy:86800,label:"Xe riêng trọn trip",note:"Xe 7 chỗ 6 ngày + đón đưa sân bay · Tự do 100%",detail:[["Xe thuê 6 ngày (¥12,000/ngày)",72000],["Xe đón sân bay",7000],["Xe đưa sân bay",7800]]}};
+const FOODS=["Miso Ramen gốc Sapporo","Soup Curry GARAKU","Jingisukan BBQ cừu","Cua hoàng đế Kani Honke","Kaisendon tại Nijo Market","Zangi — gà chiên Hokkaido","Ebisoba — mì tôm hùm","Parfait khuya Sapporo","Uni + Ikura don","LeTAO Cheesecake","Bia Sapporo tại nhà máy"];
 
-    // Logic cập nhật số người (Hệ số tính toán giữ nguyên từ JSX của bạn)
-    function updateGroup(n) {
-        document.querySelectorAll('#people-picker button').forEach(btn => btn.classList.remove('active'));
-        event.target.classList.add('active');
-        document.getElementById('display-people').innerText = n;
-        
-        // Bạn có thể thêm logic tính toán giá tiền VND ở đây dựa trên const của bạn
-        calculateTotal(n);
-    }
+let state={openDay:null,groupSize:2,soloMode:"jr",sel:{}};
+DAYS.forEach(d=>(d.options||[]).forEach(o=>{state.sel[o.id]=o.def}));
 
-    function calculateTotal(n) {
-        const flightVnd = 12000000;
-        const exchangeRate = 165;
-        // Logic tính toán tương tự useMemo trong React...
-        // Tạm thời hiển thị số minh họa
-        document.getElementById('total-per-person').innerText = n > 1 ? "28.5tr" : "36.2tr";
-        document.getElementById('total-activities').innerText = "8.4tr";
-    }
+function calc(){
+  let dyn=0;
+  DAYS.forEach(d=>{d.spots.forEach(s=>dyn+=s.cost);(d.options||[]).forEach(o=>dyn+=o.choices[state.sel[o.id]].cost)});
+  const n=state.groupSize,sm=state.soloMode;
+  let tJpy,hJpy;
+  if(n===1){tJpy=SOLO[sm].jpy;hJpy=63000}
+  else{tJpy=Math.round(86800/n);hJpy=Math.round(84000*ROOMS[n]/n)}
+  const fix={flight:12000000,hotel:hJpy*165,transport:tJpy*165};
+  const fixTotal=fix.flight+fix.hotel+fix.transport;
+  return{dyn,dynVND:dyn*165,fix,fixTotal,total:fixTotal+dyn*165,tJpy,hJpy};
+}
 
-    window.onload = () => calculateTotal(2);
+function dayCost(d){let t=0;d.spots.forEach(s=>t+=s.cost);(d.options||[]).forEach(o=>t+=o.choices[state.sel[o.id]].cost);return t}
+
+function render(){
+  const c=calc();const n=state.groupSize;
+  const fixedRows=[
+    {label:"Vé máy bay khứ hồi",note:"SGN ↔ CTS · VietJet / AirAsia / JAL",vnd:c.fix.flight},
+    {label:n===1?"Khách sạn 7 đêm (phòng single)":`Khách sạn 7 đêm (${ROOMS[n]} phòng ÷ ${n})`,note:n===1?"3–4★ Sapporo · ~¥9,000/đêm phòng đơn":`3–4★ Sapporo · ¥12,000/đêm · ${ROOMS[n]} phòng`,vnd:c.fix.hotel},
+    {label:n===1?SOLO[state.soloMode].label:`Xe riêng 8 ngày (÷ ${n})`,note:n===1?SOLO[state.soloMode].note:`Tổng nhóm ¥86,800 ÷ ${n} người`,vnd:c.fix.transport}
+  ];
+
+  let h=`<div class="hero"><div class="tag">Lịch trình tự túc · ${n} người · Mùa đông 2026</div><h1>Hokkaido</h1><div class="sub">Tám ngày giữa tuyết trắng, onsen nóng<br>và hải sản tươi nhất xứ Phù Tang</div><div class="rule"></div><div class="meta">SGN → CTS · 6–13 Tháng 12 · Trượt tuyết Niseko · Onsen · Hải sản</div></div>`;
+
+  h+=`<div class="leave"><div class="lt">Tối ưu nghỉ phép</div><p>Chỉ xin <strong>5 ngày phép</strong> (T2 7/12 → T6 11/12) — được nghỉ <strong>8 ngày liền</strong>.<br><span>Tận dụng 2 weekend · Đầu tháng 12 giá rẻ hơn peak cuối tháng</span></p></div>`;
+
+  h+=`<div class="grp"><span class="gl">Số người</span><div class="btns">${[1,2,3,4].map(i=>`<button class="${n===i?'on':''}" onclick="setGroup(${i})">${i}</button>`).join('')}</div><span class="rm">${n===1?'phòng đơn':ROOMS[n]+' phòng'}</span></div>`;
+
+  if(n===1){
+    h+=`<div class="solo-box"><div class="sh">Di chuyển solo</div>`;
+    for(const[k,o]of Object.entries(SOLO)){
+      const on=state.soloMode===k;
+      h+=`<div class="solo-row ${on?'on':''}" onclick="setSolo('${k}')"><div class="radio ${on?'on':''}"></div><div><div style="font-size:14px;font-weight:500;display:flex;align-items:center;gap:8px">${o.label}${k==='jr'?'<span class="rec-tag">Tiết kiệm</span>':''}</div><div style="font-size:12px;color:var(--mfg);line-height:1.5">${o.note}</div></div><div style="text-align:right;white-space:nowrap"><div style="font-family:var(--serif);font-size:14px;color:${on?'var(--accent)':'var(--mfg)'}">¥${o.jpy.toLocaleString()}</div><div style="font-size:11px;color:var(--mfg)">~${(o.jpy*165/1e6).toFixed(1)}tr</div></div></div>`;
+      if(on){h+=`<div class="solo-detail">${o.detail.map(d=>`<div><span>${d[0]}</span><span class="c">¥${d[1].toLocaleString()}</span></div>`).join('')}</div>`}
+    }
+    h+=`</div>`;
+  }
+
+  h+=`<div class="stats"><div class="st"><div class="sv">${(c.total/1e6).toFixed(1)}tr</div><div class="sl">Tổng / người</div><div class="ss">~$${Math.round(c.total/25000)}</div></div><div class="div"></div><div class="st"><div class="sv">${(c.dynVND/1e6).toFixed(1)}tr</div><div class="sl">Ăn uống & vé</div><div class="ss">¥${c.dyn.toLocaleString()}</div></div><div class="div"></div><div class="st"><div class="sv">165₫</div><div class="sl">Tỉ giá</div><div class="ss">= 1 Yên Nhật</div></div></div>`;
+
+  h+=`<div class="sec-label"><span></span><span class="txt">Lịch trình chi tiết</span><span></span></div>`;
+
+  DAYS.forEach(d=>{
+    const open=state.openDay===d.day;const dc=dayCost(d);
+    h+=`<div class="day ${open?'open':''}"><button class="day-hdr" onclick="toggleDay(${d.day})"><div style="display:flex;align-items:baseline"><span class="num">${String(d.day).padStart(2,'0')}</span><div><div class="ti">${d.title}</div><div class="da">${d.date}</div></div></div><div style="display:flex;align-items:center"><span class="co">¥${dc.toLocaleString()}</span><span class="arr">▼</span></div></button>`;
+    if(open){
+      h+=`<div class="day-body"><div class="day-sub">${d.subtitle}</div>`;
+      d.spots.forEach(s=>{
+        h+=`<div class="spot"><span class="tm">${s.time}</span><div><div class="nm">${s.name}</div>${s.detail?`<div class="dt">${s.detail}</div>`:''}</div><div>${s.cost>0?`<div class="pr">¥${s.cost.toLocaleString()}</div>`:`<div class="nt">${s.note}</div>`}</div></div>`;
+      });
+      (d.options||[]).forEach(opt=>{
+        const si=state.sel[opt.id];
+        h+=`<div class="opt-group"><div class="ol">${opt.label}</div>`;
+        opt.choices.forEach((ch,ci)=>{
+          const on=si===ci;
+          h+=`<div class="opt-row ${on?'on':''}" onclick="pick('${opt.id}',${ci})"><div class="radio ${on?'on':''}"></div><div><div class="on-nm">${ch.name}${ch.rec?'<span class="rec-tag">Gợi ý</span>':''}</div><div class="on-dt">${ch.detail}</div></div><div class="on-pr">${ch.cost>0?`<div class="am">¥${ch.cost.toLocaleString()}</div>`:`<div style="font-size:11px;color:var(--mfg)">${ch.note}</div>`}</div></div>`;
+        });
+        h+=`</div>`;
+      });
+      h+=`<div class="day-total"><span>Tổng ngày: ¥${dc.toLocaleString()} <span class="vnd">· ~${Math.round(dc*165/1000).toLocaleString()}k₫</span></span></div></div>`;
+    }
+    h+=`</div>`;
+  });
+
+  h+=`<div class="sec-label"><span></span><span class="txt">Chi phí tổng hợp</span><span></span></div>`;
+  h+=`<div class="budget"><div class="bh"><span class="bt">Ước tính / người</span><span class="bm">${n===1?'Solo · phòng đơn':`${n} người · ${ROOMS[n]} phòng`}</span></div>`;
+  fixedRows.forEach(r=>{h+=`<div class="b-row"><div><div class="bl">${r.label}</div><div class="bn">${r.note}</div></div><div class="bv">${(r.vnd/1e6).toFixed(1)}tr</div></div>`});
+  h+=`<div class="b-row"><div><div class="bl">Ăn uống, vé & trải nghiệm</div><div class="bn">Tự động cập nhật theo lựa chọn</div></div><div class="bv ac">${(c.dynVND/1e6).toFixed(1)}tr</div></div>`;
+  h+=`<div class="b-total"><div class="tl">Tổng cộng</div><div class="tv">${(c.total/1e6).toFixed(1)}tr₫</div></div></div>`;
+
+  h+=`<div class="sec-label"><span></span><span class="txt">Đặc sản phải thử</span><span></span></div>`;
+  h+=`<div class="food">${FOODS.map(f=>`<div><span class="dash">—</span>${f}</div>`).join('')}</div>`;
+
+  h+=`<div class="sec-label"><span></span><span class="txt">Lưu ý</span><span></span></div>`;
+  h+=`<div class="notes"><p><strong>Thời tiết:</strong> -7°C → 0°C · Áo phao dày, thermal, găng tay, giày chống trượt</p><p><strong>Niseko:</strong> Mở cửa từ cuối tháng 11 · Đầu tháng 12 là early season, giá rẻ hơn peak</p><p><strong>Illumination:</strong> Odori Park sáng đèn Giáng sinh suốt tháng 11–12</p><p><strong>Đặt sớm:</strong> KS và vé bay nên book trước 2–3 tháng để giữ giá tốt</p></div>`;
+
+  h+=`<div class="footer">1 JPY ≈ 165 VNĐ · 1 USD ≈ 25,000 VNĐ · Tham khảo 04/2026 · Dao động ±15–20%<br>Nhấn chọn option để tùy chỉnh trải nghiệm & cập nhật chi phí tự động<br>Tag vàng "Gợi ý" là những trải nghiệm local đặc sắc được đề xuất thêm</div>`;
+
+  document.getElementById('app').innerHTML=h;
+}
+
+function toggleDay(d){state.openDay=state.openDay===d?null:d;render()}
+function setGroup(n){state.groupSize=n;render()}
+function setSolo(m){state.soloMode=m;render()}
+function pick(id,i){state.sel[id]=i;render()}
+
+render();
 </script>
-
 </body>
 </html>
